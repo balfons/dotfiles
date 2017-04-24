@@ -1,22 +1,22 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 14,
+    fontSize: 16,
 
     // font family with optional fallbacks
     fontFamily: 'Fira Code, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(0, 150, 136, .6)',
+    cursorColor: '#009688',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
-    cursorShape: 'BLOCK',
+    cursorShape: 'UNDERLINE',
 
     // color of the text
     foregroundColor: '#ECEFF1',
 
     // terminal background color
-    backgroundColor: '#181818',
+    backgroundColor: '#1e1e1e',
 
     // border color (window, tabs)
     borderColor: '#222d32',
@@ -24,19 +24,23 @@ module.exports = {
     // custom css to embed in the main window
     css: `
       .hyper_main {
-        border: 2px solid #121212 !important;
+        border: 4px solid #171717 !important;
       }
       .header_header {
-        background: #121212 !important;
+        background: #171717 !important;
+        top: 4px;
+        left: 4px;
+        right: 4px;
       }
       .tab_tab, .tabs_borderShim {
         border: 0;
       }
       .tab_textActive {
         border-bottom: 2px solid #009688;
+        font-weight: 700;
       }
       .splitpane_divider {
-        background-color: #121212 !important;
+        background-color: #171717 !important;
         border-width: 4px !important;
       }
     `,
@@ -45,9 +49,6 @@ module.exports = {
     // Current styles: background for nano commands and heading
     // Enable font ligatures: currently off
     termCSS: `
-      [style*="background-color: rgb(236, 239, 241)"] {
-        background-color: rgb(18, 18, 18) !important;
-      }
       // x-screen x-row { font-variant-ligatures: contextual; }
     `,
 
@@ -107,6 +108,9 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     // 'hyperline'
+    // 'hyper-john'
+    // 'hyper-simple-vibrancy'
+    // 'hyper-statusline'
   ],
 
   // in development, you can create a directory under
