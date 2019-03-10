@@ -129,7 +129,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '',
+    shell: 'zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
@@ -165,7 +165,7 @@ module.exports = {
       defaultBrowser: false
     },
 
-    opacity: 0.98 // hyper-opacity
+    // opacity: 0.98 // hyper-opacity
   },
 
   // a list of plugins to fetch and install from npm
@@ -175,10 +175,9 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyperlayout",
     "hyperborder",
-    "hyperlinks",
-    "hyper-opacity",
+    "hyperlinks"
+    // "hyper-opacity",
     // "hyper-simple-vibrancy"
   ],
 
