@@ -1,7 +1,0 @@
-{
-  "entry": "horizontal",
-  "layout": [
-    ["clear", ""],
-    ["", ""]
-  ]
-}
